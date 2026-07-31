@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #faf9f7;
+    line-height: 1.6;
+}
+
+header {
+    padding: 24px 6%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 15px;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 6%;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.05;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.intro {
+    font-size: 20px;
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    text-decoration: none;
+    color: white;
+    background: #333;
+    border-radius: 2px;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.topic {
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    padding: 40px 6%;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+
+    section {
+        padding: 55px 7%;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .intro {
+        font-size: 18px;
+    }
+
+    .topics {
+        grid-template-columns: 1fr;
+    }
+}
