@@ -273,18 +273,25 @@ img {
 .certificates {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 16px;
+    width: 100%;
+    min-width: 0;
 }
 
 .certificates a {
     display: block;
+    width: 100%;
+    min-width: 0;
     overflow: hidden;
 }
 
 .certificates img {
+    display: block;
     width: 100%;
-    aspect-ratio: 1.45 / 1;
+    height: 190px;
+    max-width: 100%;
     object-fit: cover;
+    object-position: center;
 
     transition: transform 0.25s ease;
 }
@@ -292,7 +299,6 @@ img {
 .certificates a:hover img {
     transform: scale(1.03);
 }
-
 
 /* =========================
    CONTACT
@@ -456,7 +462,11 @@ footer {
     }
 
     .certificates {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .certificates img {
+        height: 150px;
     }
 
     .quote blockquote {
