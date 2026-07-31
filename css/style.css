@@ -159,6 +159,42 @@ img {
     border-radius: 12px;
 }
 
+/* =========================
+   MESSENGER ICONS
+========================= */
+
+.messengers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.messengers > span {
+    margin-right: 3px;
+}
+
+.messengers a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    line-height: 0;
+}
+
+.messengers img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+
+    transition: transform 0.2s ease;
+}
+
+.messengers a:hover img {
+    transform: scale(1.08);
+}
 
 /* =========================
    THERAPY
@@ -519,5 +555,10 @@ footer {
 
     .quote blockquote {
         font-size: 25px;
+    }
+    
+    .messengers img {
+        width: 36px;
+        height: 36px;
     }
 }
