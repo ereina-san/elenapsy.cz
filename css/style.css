@@ -8,135 +8,506 @@ html {
 
 body {
     margin: 0;
+    background: #ffffff;
+    color: #303030;
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    background: #faf9f7;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.55;
 }
 
-header {
-    padding: 24px 6%;
+a {
+    color: inherit;
 }
 
-nav {
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    height: 29px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 11px;
+    color: #777777;
+}
+
+.top-bar-inner {
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    text-decoration: none;
-    color: inherit;
-    font-size: 24px;
-}
-
-.language-switcher {
+.contact-info {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 10px;
 }
 
-.language-switcher a {
+.contact-info a {
     text-decoration: none;
-    color: inherit;
-    font-size: 14px;
 }
 
-main {
-    max-width: 1200px;
-    margin: auto;
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-section {
-    padding: 80px 6%;
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 95px;
+    background: #ffffff;
 }
 
-.hero {
-    min-height: 70vh;
+.header-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 100%;
+
     display: flex;
     align-items: center;
 }
 
-.hero-text {
-    max-width: 700px;
+.logo img {
+    width: 125px;
+    height: auto;
 }
 
-.eyebrow {
-    font-size: 13px;
-    letter-spacing: 2px;
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background: #ffffff;
+    padding: 25px 20px 60px;
 }
 
-h1 {
-    font-size: clamp(42px, 7vw, 76px);
-    line-height: 1.05;
-    font-weight: 400;
-    margin: 20px 0;
-}
+.hero-content {
+    max-width: 1080px;
+    margin: 0 auto;
 
-h2 {
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-.intro {
-    font-size: 20px;
-    max-width: 650px;
-    margin-bottom: 35px;
-}
-
-.button {
-    display: inline-block;
-    padding: 14px 28px;
-    text-decoration: none;
-    color: white;
-    background: #333;
-    border-radius: 2px;
-}
-
-.topics {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr 430px;
+    gap: 65px;
+    align-items: center;
 }
 
-.topic {
-    padding: 30px;
-    border: 1px solid #ddd;
+.hero-text {
+    padding-top: 5px;
 }
+
+.hero-text h1 {
+    margin: 0 0 5px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.hero-text h2 {
+    margin: 0 0 22px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.hero-text p {
+    margin: 0 0 18px;
+    color: #777777;
+    font-size: 16px;
+}
+
+.hero-text a {
+    color: #1685e5;
+}
+
+.hero-text .whatsapp {
+    color: #159b86;
+}
+
+.appointment {
+    margin-top: 55px;
+}
+
+.appointment h3 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.appointment p {
+    margin-bottom: 8px;
+}
+
+.hero-photo img {
+    width: 430px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* =========================
+   THERAPY
+========================= */
+
+.therapy {
+    padding: 55px 20px 60px;
+
+    background-color: #ffffff;
+
+    background-image:
+        repeating-linear-gradient(
+            25deg,
+            transparent,
+            transparent 38px,
+            rgba(190, 190, 190, 0.12) 39px,
+            transparent 40px
+        ),
+        repeating-linear-gradient(
+            -25deg,
+            transparent,
+            transparent 38px,
+            rgba(190, 190, 190, 0.10) 39px,
+            transparent 40px
+        );
+}
+
+.section-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.therapy h2 {
+    margin: 0 0 12px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.therapy ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.therapy li {
+    padding-left: 5px;
+    margin-bottom: 6px;
+    color: #666666;
+}
+
+.therapy li::marker {
+    content: "›  ";
+    font-size: 20px;
+}
+
+
+/* =========================
+   TRAINING
+========================= */
+
+.training {
+    padding: 65px 20px 70px;
+}
+
+.training-inner {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: start;
+}
+
+.training-text h2 {
+    margin: 0 0 20px;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.training-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.training-text li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: #777777;
+}
+
+.training-text li::before {
+    content: "›";
+    position: absolute;
+    left: 8px;
+    top: -1px;
+    font-size: 20px;
+    color: #777777;
+}
+
+.price-title {
+    margin-top: 35px !important;
+}
+
+
+/* =========================
+   CERTIFICATES
+========================= */
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.certificates a {
+    display: block;
+    overflow: hidden;
+}
+
+.certificates img {
+    width: 100%;
+    aspect-ratio: 1.45 / 1;
+    object-fit: cover;
+
+    transition: transform 0.25s ease;
+}
+
+.certificates a:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
+    padding: 55px 20px 65px;
     text-align: center;
 }
+
+.contact h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contact p {
+    margin: 6px 0;
+    color: #777777;
+    font-size: 18px;
+}
+
+.contact a {
+    color: #1685e5;
+}
+
+.contact .whatsapp {
+    color: #159b86;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote {
+    background: #222222;
+    color: #ffffff;
+    padding: 70px 20px 75px;
+}
+
+.quote-inner {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.quote blockquote {
+    margin: 0;
+    max-width: 600px;
+
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.quote cite {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+
+    width: max-content;
+    max-width: 100%;
+
+    font-size: 24px;
+    font-style: italic;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    padding: 40px 6%;
-    text-align: center;
-    font-size: 14px;
+    background: #ffffff;
+    padding: 32px 20px;
+    color: #777777;
+    font-size: 13px;
 }
 
-@media (max-width: 700px) {
+.footer-inner {
+    max-width: 1080px;
+    margin: 0 auto;
 
-    section {
-        padding: 55px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-inner p {
+    margin: 0;
+}
+
+.footer-inner div {
+    text-align: right;
+}
+
+.footer-inner a {
+    color: #777777;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .top-bar {
+        height: auto;
+        padding: 8px 15px;
+    }
+
+    .top-bar-inner {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .contact-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header {
+        height: 75px;
+    }
+
+    .header-inner {
+        justify-content: center;
     }
 
     .hero {
-        min-height: 65vh;
+        padding: 35px 20px 50px;
     }
 
-    h1 {
-        font-size: 45px;
-    }
-
-    h2 {
-        font-size: 32px;
-    }
-
-    .intro {
-        font-size: 18px;
-    }
-
-    .topics {
+    .hero-content {
         grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hero-text {
+        order: 1;
+    }
+
+    .hero-photo {
+        order: 0;
+    }
+
+    .hero-photo img {
+        width: 100%;
+        height: auto;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .appointment {
+        margin-top: 35px;
+    }
+
+    .training-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .certificates {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quote blockquote {
+        font-size: 28px;
+    }
+
+    .quote cite {
+        font-size: 20px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .footer-inner div {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .contact-info {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .hero-text h1 {
+        font-size: 27px;
+    }
+
+    .hero-text h2 {
+        font-size: 17px;
+    }
+
+    .therapy h2,
+    .contact h2 {
+        font-size: 27px;
+    }
+
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+
+    .quote {
+        padding: 50px 20px;
+    }
+
+    .quote blockquote {
+        font-size: 25px;
     }
 }
