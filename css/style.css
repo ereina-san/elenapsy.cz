@@ -212,7 +212,7 @@ img {
 .therapy {
     padding: 55px 20px 60px;
 
-    background-color: #ededed;
+    background-color: #edeef0;
 
     background-image:
         repeating-linear-gradient(
@@ -229,6 +229,35 @@ img {
             rgba(190, 190, 190, 0.10) 39px,
             transparent 40px
         );
+}
+
+.section-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.therapy h2 {
+    margin: 0 0 12px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.therapy ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.therapy li {
+    padding-left: 5px;
+    margin-bottom: 6px;
+    color: #666666;
+}
+
+.therapy li::marker {
+  /*  content: "›  "; */
+    content: "•  "
+    font-size: 20px;
 }
 
 /* =========================
