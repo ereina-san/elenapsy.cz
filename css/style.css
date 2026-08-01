@@ -163,10 +163,6 @@ img {
    MESSENGER ICONS
 ========================= */
 
-/* =========================
-   MESSENGER ICONS
-========================= */
-
 .messengers {
     display: flex;
     flex-direction: column;
@@ -229,7 +225,7 @@ img {
 .therapy {
     padding: 55px 20px 60px;
 
-    background-color: #faf8f3;
+    background-color: #f6faf3;
 
     background-image:
         linear-gradient(
