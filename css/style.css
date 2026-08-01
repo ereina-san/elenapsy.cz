@@ -165,30 +165,27 @@ img {
 
 .messengers {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
 .messengers > span {
-    margin-right: 3px;
+    display: block;
 }
 
-.messengers a {
+.messengers > a {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+}
 
-    text-decoration: none;
-
-    line-height: 0;
+.messengers > a + a {
+    margin-left: 8px;
 }
 
 .messengers img {
-    max-width: 38px;
-    height: 100%;
+    width: 38px;
+    height: 38px;
     object-fit: contain;
-
     transition: transform 0.2s ease;
 }
 
