@@ -255,8 +255,7 @@ img {
 }
 
 .therapy li::marker {
-  /*  content: "›  "; */
-    content: "•  "
+    content: "›  ";
     font-size: 20px;
 }
 
