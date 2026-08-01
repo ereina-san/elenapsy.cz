@@ -485,11 +485,11 @@ footer {
     }
 
     .certificates {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .certificates img {
-        height: 150px;
+    .certificates a {
+    height: 150px;
     }
 
     .quote blockquote {
@@ -533,7 +533,17 @@ footer {
     }
 
     .certificates {
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    }
+
+    .certificates a {
+    height: auto;
+    min-height: 300px;
+    }
+
+    .certificates img {
+    width: 100%;
+    height: auto;
     }
 
     .quote {
