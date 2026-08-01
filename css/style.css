@@ -197,6 +197,14 @@ img {
     transform: scale(1.08);
 }
 
+.contact .messengers {
+    align-items: center;
+}
+
+.contact .messenger-icons {
+    justify-content: center;
+}
+
 /* =========================
    THERAPY
 ========================= */
