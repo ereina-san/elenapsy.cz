@@ -212,7 +212,7 @@ img {
 .therapy {
     padding: 55px 20px 60px;
 
-    background-color: #ffffff;
+    background-color: #ededed;
 
     background-image:
         repeating-linear-gradient(
@@ -233,7 +233,7 @@ img {
 */
 
 .therapy {
-    background-color: ##f3f4f6;
+    background-color: #f3f4f6;
     background-image: url("../therapy-bg-pattern2.jpg");
     background-repeat: repeat;
     background-position: center;
