@@ -227,19 +227,14 @@ img {
 
     background-image:
         linear-gradient(
-            120deg,
-            transparent 49.5%,
-            rgba(190, 170, 140, 0.14) 50%,
-            transparent 50.5%
-        ),
-        linear-gradient(
-            60deg,
-            transparent 49.5%,
-            rgba(190, 170, 140, 0.10) 50%,
-            transparent 50.5%
+            135deg,
+            transparent 47%,
+            rgba(190, 170, 140, 0.11) 48%,
+            rgba(190, 170, 140, 0.11) 52%,
+            transparent 53%
         );
 
-    background-size: 90px 90px;
+    background-size: 70px 70px;
 }
 
 .section-inner {
