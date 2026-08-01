@@ -170,28 +170,30 @@ img {
     gap: 10px;
 }
 
-.messengers > span {
-    display: block;
+.messenger-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
-.messengers a {
+.messenger-icons a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    text-decoration: none;
     line-height: 0;
+    text-decoration: none;
 }
 
-.messengers img {
+.messenger-icons img {
+    display: block;
     width: 38px;
     height: 38px;
     object-fit: contain;
-
     transition: transform 0.2s ease;
 }
 
-.messengers a:hover img {
+.messenger-icons a:hover img {
     transform: scale(1.08);
 }
 
@@ -229,14 +231,16 @@ img {
 
     background-image:
         linear-gradient(
-            135deg,
-            transparent 47%,
-            rgba(190, 170, 140, 0.11) 48%,
-            rgba(190, 170, 140, 0.11) 52%,
-            transparent 53%
+            90deg,
+            rgba(190, 170, 140, 0.10) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            rgba(190, 170, 140, 0.08) 1px,
+            transparent 1px
         );
 
-    background-size: 70px 70px;
+    background-size: 45px 45px;
 }
 
 .section-inner {
