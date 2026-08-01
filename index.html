@@ -249,35 +249,33 @@
 
             <div class="certificates">
 
-                <a href="cert-1-diploma.png" target="_blank">
-                    <img src="cert-1-diploma.png"
-                         alt="Диплом">
-                </a>
+                <div class="certificates">
 
-                <a href="cert-2-stageII.png" target="_blank">
-                    <img src="cert-2-stageII.png"
-                         alt="Сертифікат">
-                </a>
+    <a href="#" class="certificate-link" data-certificate="cert-1-diploma.png">
+        <img src="cert-1-diploma.png" alt="Диплом">
+    </a>
 
-                <a href="cert-3-war_trauma.png" target="_blank">
-                    <img src="cert-3-war_trauma.png"
-                         alt="Сертифікат">
-                </a>
+    <a href="#" class="certificate-link" data-certificate="cert-2-stageII.png">
+        <img src="cert-2-stageII.png" alt="Сертифікат">
+    </a>
 
-                <a href="cert-4-body_process.png" target="_blank">
-                    <img src="cert-4-body_process.png"
-                         alt="Сертифікат">
-                </a>
+    <a href="#" class="certificate-link" data-certificate="cert-3-war_trauma.png">
+        <img src="cert-3-war_trauma.png" alt="Сертифікат">
+    </a>
 
-                <a href="cert-5-sex_gt.png" target="_blank">
-                    <img src="cert-5-sex_gt.png"
-                         alt="Сертифікат">
-                </a>
+    <a href="#" class="certificate-link" data-certificate="cert-4-body_process.png">
+        <img src="cert-4-body_process.png" alt="Сертифікат">
+    </a>
 
-                <a href="cert-6-psychiatry.png" target="_blank">
-                    <img src="cert-6-psychiatry.png"
-                         alt="Сертифікат">
-                </a>
+    <a href="#" class="certificate-link" data-certificate="cert-5-sex_gt.png">
+        <img src="cert-5-sex_gt.png" alt="Сертифікат">
+    </a>
+
+    <a href="#" class="certificate-link" data-certificate="cert-6-psychiatry.png">
+        <img src="cert-6-psychiatry.png" alt="Сертифікат">
+    </a>
+
+                </div>
 
             </div>
 
@@ -368,6 +366,102 @@
     </div>
 
 </footer>
+
+<!-- CERTIFICATE LIGHTBOX -->
+
+<div class="certificate-lightbox" id="certificateLightbox">
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Закрити">
+        ×
+    </button>
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="Сертифікат">
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+    const certificateLinks =
+        document.querySelectorAll(".certificate-link");
+
+    const lightbox =
+        document.getElementById("certificateLightbox");
+
+    const lightboxImage =
+        document.getElementById("lightboxImage");
+
+    const lightboxClose =
+        document.getElementById("lightboxClose");
+
+
+    certificateLinks.forEach(link => {
+
+        link.addEventListener("click", function(event) {
+
+            event.preventDefault();
+
+            const image =
+                this.getAttribute("data-certificate");
+
+            lightboxImage.src = image;
+
+            lightbox.classList.add("active");
+
+            document.body.classList.add("lightbox-open");
+
+        });
+
+    });
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("active");
+
+        document.body.classList.remove("lightbox-open");
+
+        lightboxImage.src = "";
+
+    }
+
+
+    lightboxClose.addEventListener(
+        "click",
+        closeLightbox
+    );
+
+
+    lightbox.addEventListener(
+        "click",
+        function(event) {
+
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+
+        }
+    );
+
+
+    document.addEventListener(
+        "keydown",
+        function(event) {
+
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+
+        }
+    );
+</script>
 
 </body>
 </html>
