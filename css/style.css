@@ -163,6 +163,10 @@ img {
    MESSENGER ICONS
 ========================= */
 
+/* =========================
+   MESSENGER ICONS
+========================= */
+
 .messengers {
     display: flex;
     flex-direction: column;
@@ -174,18 +178,20 @@ img {
     display: block;
 }
 
-.messengers > a {
+.messengers a {
     display: inline-flex;
-}
+    align-items: center;
+    justify-content: center;
 
-.messengers > a + a {
-    margin-left: 8px;
+    text-decoration: none;
+    line-height: 0;
 }
 
 .messengers img {
     width: 38px;
     height: 38px;
     object-fit: contain;
+
     transition: transform 0.2s ease;
 }
 
