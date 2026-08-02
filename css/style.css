@@ -368,7 +368,7 @@ img {
     height: 100%;
     max-width: 100%;
 
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 
     transition: transform 0.25s ease;
