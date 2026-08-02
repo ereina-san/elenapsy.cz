@@ -309,7 +309,6 @@ img {
     margin-top: 35px !important;
 }
 
-
 /* =========================
    CERTIFICATES
 ========================= */
@@ -319,35 +318,40 @@ img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
     width: 100%;
+    min-width: 0;
 }
 
-.certificates a {
+.certificates .certificate-link {
     display: flex;
     align-items: center;
     justify-content: center;
 
     width: 100%;
     height: 190px;
+    min-width: 0;
 
     overflow: hidden;
     border-radius: 5px;
 
     background: #f7f5f1;
+
+    cursor: pointer;
 }
 
-.certificates img {
+.certificates .certificate-link img {
     display: block;
 
     width: 100%;
     height: 100%;
+    max-width: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 
     transition: transform 0.25s ease;
 }
 
-.certificates a:hover img {
+.certificates .certificate-link:hover img {
     transform: scale(1.03);
 }
 
@@ -600,7 +604,7 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .certificates a {
+    .certificates .certificate-link {
     height: 150px;
     }
 
@@ -645,17 +649,17 @@ footer {
     }
 
     .certificates {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
-    .certificates a {
-    height: auto;
-    min-height: 300px;
+    .certificates .certificate-link {
+        height: auto;
+        min-height: 300px;
     }
 
-    .certificates img {
-    width: 100%;
-    height: auto;
+    .certificates .certificate-link img {
+        width: 100%;
+        height: auto;
     }
 
     .quote {
