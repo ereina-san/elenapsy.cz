@@ -63,14 +63,12 @@ img {
 }
 
 .language-arrow {
-    width: 7px;
-    height: 7px;
-
-    border-right: 1.5px solid #777;
-    border-bottom: 1.5px solid #777;
-
-    transform: rotate(45deg);
-    margin-top: -3px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    position: relative;
+    top: -2px;
+    color: #777;
 }
 
 /* =========================
